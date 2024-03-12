@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --border-color: #ccc;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#reservation_form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.preferences-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preferences-container label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preferences-container input[type="radio"],
+.preferences-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #reservation_form {
+    width: 95%;
+  }
+}
